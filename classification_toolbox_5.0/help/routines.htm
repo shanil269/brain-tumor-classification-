@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Classification toolbox for MATLAB</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="HAPedit 3.0">
+
+<link href = "style_structure.css" rel="stylesheet" type="text/css">
+<link href = "style_text.css" rel="stylesheet" type="text/css">
+<link href = "style_tables.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div id="container">
+<a name="top"></a>
+
+    <div id="header">
+		<iframe src="header.htm" width="740" height="60" scrolling="no" frameborder="0">
+  			no i_frames allowed :: change browser
+	  	</iframe>
+    </div>
+
+    <div id="content">
+
+		<table width="740" border="0" cellpadding="0" cellspacing="0">
+  		<tr>
+		<td width="150" valign="top">
+		
+		<iframe src="menu_lateral.htm" width="135" height="360" scrolling="no" frameborder="0">
+  			no i_frames allowed :: change browser
+	  	</iframe>
+		
+		</td>
+
+    	<td valign="top">
+
+		  <div align="justify">
+		    <div id="tab_duo_contenitor" class="text">
+		    <span class="title_page">MATLAB routines</span>		
+		    <BR>
+		    <BR>
+    
+		<div id="tab_duo_text">
+			  <div id="tab_space_lateral"><a href="#sub_0" class="lnk_text">class_gui</a></div>
+		      <div id="tab_space_lateral"><a href="#sub_1" class="lnk_text">Routines for fitting models</a></div>
+			  <div id="tab_space_lateral"><a href="#sub_2" class="lnk_text">Routines for validation </a></div>
+		      <div id="tab_space_lateral"><a href="#sub_3" class="lnk_text">Routines for predicting new samples</a></div>
+			  <div id="tab_space_lateral"><a href="#sub_4" class="lnk_text">Routines for optimising models</a></div>
+	   	</div>
+    
+		<BR><a name="sub_0"></a>
+		    <BR>
+		    This is a list of the main  routines you can use to build classification models by means of the Classification toolbox for MATLAB: <BR>
+		    <BR>
+			<span class="title_paragraph">class_gui</span>
+		    <BR>
+		    <BR>
+class_gui opens a <a href="gui.htm" class="lnk_text">GUI  for calculating all classification models </a>provided in the toolbox; in order to open the graphical interface, just type on the MATLAB command line:<br>
+<br>
+<strong>class_gui</strong><br>
+<br>
+there are no inputs; data can be loaded and saved directly from the 
+ graphical interface.<BR>
+<BR>[<a href="#top" class="lnk_text">-> top</a>]
+		    <BR><a name="sub_1"></a><BR><BR>
+		<span class="title_paragraph">Routines for fitting models </span><BR>
+		    <BR>
+Discriminant Analysis, Partial Least Square Discriminant Analysis 
+(PLSDA), Classification trees (CART), K-Nearest Neighbors  (kNN), Potential Functions, Support Vector Machines (SVM), Unequal class models (UNEQ) and Soft Independent Modeling of Class Analogy (SIMCA) can be calculated by means of the routines <strong>dafit</strong>, <strong>plsdafit</strong>, <strong>cartfit</strong>, <strong>knnfit</strong>, <strong>potfit</strong>, <strong>svmfit</strong>, <strong>uneqfit</strong> and <strong>simcafit</strong>  respectively. The output of the routines collects the calculated class vector [samples x 1], the  <a href="classparameters.htm" class="lnk_text">classification parameters</a> in fitting, and other details. Type "help routine_name" on the MATLAB command window for further information.<BR>
+		    <BR>
+			[<a href="#top" class="lnk_text">-> top</a>]
+		    <BR>
+		    <a name="sub_2" id="sub_2"></a><BR>
+		    <BR>
+            <span class="title_paragraph">Routines for validation</span> <BR>
+            <BR>
+Validation of Discriminant Analysis, Partial Least Square Discriminant Analysis 
+(PLSDA), Classification trees (CART),  K-Nearest Neighbors  (kNN), Potential Functions, Support Vector Machines (SVM), Unequal class models (UNEQ)  and Soft Independent Modeling of Class Analogy (SIMCA) can be calculated by means of the routines <strong>dacv</strong>, <strong>plsdacv</strong>, <strong>cartcv</strong>, <strong>knncv</strong>, <strong>potcv</strong>, <strong>svmcv</strong>, <strong>uneqcv</strong> and <strong>simcacv</strong>  respectively. The output of the routines collects the predicted class vector [samples x 1], the <a href="classparameters.htm" class="lnk_text">classification parameters</a> in  validation, and other details. Cross validation is performed with venetian blinds (i.e. with 3 cv groups the split of the first group will be [1,0,0,1,0,0,....,1,0,0] and so on) or contiguous blocks (i.e. the split of the first group will be [1,1,1,1,0,0,....,0,0,0] and so on). Moreover, bootstrap with resampling and validation based on random sampling (montecarlo) of 20% of samples can be calculated. Type "help routine_name" on the MATLAB command window for further information. <BR>
+<BR>
+[<a href="#top" class="lnk_text">-> top</a>] <BR><BR> <a name="sub_3" id="sub_3"></a>
+		    <BR>
+		
+		<span class="title_paragraph">Routines for predicting new samples</span>
+		    <BR>
+		    <BR>
+			Prediction of new samples by means of Discriminant Analysis, Partial Least Square Discriminant Analysis 
+(PLSDA), Classification trees (CART),  K-Nearest Neighbors  (kNN), Potential Functions, Support Vector Machines (SVM), Unequal class models (UNEQ)  and Soft Independent Modeling of Class Analogy (SIMCA) can be performed with the routines <strong>dapred</strong>, <strong>plsdapred</strong>, <strong>cartpred</strong>, <strong>knnpred</strong>, <strong>potpred</strong>, <strong>svmpred</strong>, <strong>uneqpred</strong> and <strong>simcapred</strong>  respectively. The output of the routines collects the predicted class vector [samples x 1] and other details. Type "help routine_name" on the MATLAB command window for further information.<BR>
+		    <BR>
+			
+			[<a href="#top" class="lnk_text">-> top</a>]		    <BR>
+			<BR>
+            <a name="sub_4" id="sub_4"></a> <BR>
+            <span class="title_paragraph">Routines for  optimising models</span> <BR>
+            <BR>
+The cross validation procedure for selecting the optimal parameters (components for PCA-DA and SIMCA, latent variables for PLSDA, number of neighbours for K-Nearest Neighbors, cost and kernel parameter for SVM, smoothing parameter for Potential Functions) can be performed with the routines <strong>dacompsel</strong> (for PCA-DA), <strong>plsdacompsel</strong> (for PLSDA), <strong>potsmootsel</strong> (for Potential Functions), <strong>svmcostsel</strong> (for SVM), <strong>simcacompsel</strong> (for SIMCA), <strong>uneqcompsel</strong> (for UNEQ) and <strong>knnksel</strong> (for kNN). The output of the routines collects the error rate in cross validation (and non-error rate in cross validation) associated to each parameter value. Type "help routine_name" on the MATLAB command window for further information.<BR>
+<BR>
+[<a href="#top" class="lnk_text">-> top</a>] <BR>
+<BR><BR>&nbsp;
+			<BR>
+			<BR>&nbsp;  	     
+		 </div>
+  
+		  </div></td>
+  		</tr>
+	  </table>
+
+    </div>
+
+    <div id="footer">
+		<iframe src="footer.htm" width="700" height="13" scrolling="no" frameborder="0">
+  			no i_frames allowed :: change browser
+	  	</iframe>
+	</div>
+</div>
+</body>
+</html>
